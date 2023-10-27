@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 30rem;
+    background-color: white;
+    border: 2px solid #595959;
+    border-radius: 8px;
+}
+
+.form button {
+    align-self: flex-start;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 0;
+    border: 0;
+    background-color: #40215d;
+    color: white;
+}
+
+.form button:active {
+    background-color: #693a88;
+}
+
+.input-cluster{
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem;
+}
