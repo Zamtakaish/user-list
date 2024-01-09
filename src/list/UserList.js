@@ -6,10 +6,12 @@ function UserList(props) {
 
     if (props.users.length > 0){
         return (
-            <div className={styles.list}>
-                {props.users.map(element => {
-                    return <UserCard name={element.name} age={element.age}/>
-                })}
+            <div className={styles.listWrapper}>
+                <div className={styles.list}>
+                    {props.users.map(element => {
+                        return <UserCard name={element.name} age={element.age}/>
+                    })}
+                </div>
             </div>
         );
     }
