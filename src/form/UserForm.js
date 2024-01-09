@@ -16,9 +16,20 @@ function UserForm(props) {
 
     function onSubmitHandler(event){
         event.preventDefault();
-        if ((name !== '') && (age !== ''))
+        if ((name !== '') && (age !== '') && (+age >= 0))
         props.addUser({name: name, age: age});
-        else console.log('Error!')
+        else if ((name === '') && (age === '')){
+            props.setWarning('Please, enter user\'s name and age.');
+        }
+        else if (name === ''){
+            props.setWarning('Please, enter user\'s name.');
+        }
+        else if (age === ''){
+            props.setWarning('Please, enter user\'s age.');
+        }
+        else if (+age < 0){
+            props.setWarning('User\'s age should be a positive number.');
+        }
     }
 
     return (

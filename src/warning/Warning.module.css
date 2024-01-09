@@ -1,0 +1,53 @@
+.warning_base {
+    background-color: rgb(45 45 45 / 52%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 7rem;
+    justify-content: center;
+    position: absolute;
+
+}
+
+.warning_message{
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.warning_title{
+    height: 30%;
+    padding: 1rem;
+    justify-content: center;
+    background-color: #4b216e;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.warning_description {
+    height: 50%;
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+}
+
+.warning_message button {
+    box-sizing: border-box;
+    height: 20%;
+    width: 20%;
+    margin: 1rem;
+    align-self: self-end;
+    background-color: #4b216e;
+    color: white;
+    border: 2px solid #4b216e;
+    border-radius: 4px;
+}
+
+.warning_message button:active {
+    background-color: #8326c7;
+    border: 2px inset #5c238a;
+}
